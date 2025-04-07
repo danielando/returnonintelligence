@@ -37,8 +37,54 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Podcast Subscription Options */}
+      <section className="w-full py-6 bg-[#f5f5f0] border-t border-b border-gray-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-lg font-serif text-[#004851] text-center mb-6">Available on YouTube, Apple Podcasts, Spotify, or wherever you get your podcasts</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a 
+                href="https://www.youtube.com/playlist?list=PLCkrTqFsjJnzoZ1a7UCsgxOZxNb3Z4n9v" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+              >
+                <YoutubeIcon className="w-5 h-5 text-[#fc3c3d]" />
+                <span className="text-sm text-[#4a5568]">YouTube</span>
+              </a>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+              >
+                <svg className="w-5 h-5 text-[#004851]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm0 19c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
+                  <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
+                  <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                </svg>
+                <span className="text-sm text-[#4a5568]">Apple Podcasts</span>
+              </a>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+              >
+                <svg className="w-5 h-5 text-[#004851]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm0 19c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
+                  <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
+                  <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                </svg>
+                <span className="text-sm text-[#4a5568]">Spotify</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Meet Your Hosts Section */}
-      <section className="w-full py-16 md:py-20 bg-[#f5f5f0]">
+      <section className="w-full py-12 md:py-16 bg-[#f5f5f0]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-[#004851]">Meet Your Hosts</h2>
