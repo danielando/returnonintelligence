@@ -144,101 +144,107 @@ export default function LandingPage() {
       <section className="w-full py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#004851]">Previous Episodes</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#004851]">Episodes</h2>
             <div className="w-16 h-[1px] bg-[#fc3c3d] mx-auto mt-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {/* Episode Card 1 - Horizontal Layout */}
-            <div className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col border border-gray-100 rounded-sm">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-sm font-medium text-[#fc3c3d] uppercase tracking-wider">Episode 03</span>
-                <Button variant="ghost" size="sm" className="text-[#004851] hover:text-[#fc3c3d] p-0 h-auto">
-                  <Play size={18} className="mr-1" />
-                  <span className="text-sm">Play</span>
-                </Button>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Episode 1 Card */}
+            <div className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
+              <div className="flex items-center justify-end mb-3">
+                <span className="text-sm font-medium text-white bg-[#004851] px-3 py-1 rounded-full uppercase tracking-wider">Episode 01</span>
               </div>
 
-              <h3 className="text-xl font-serif text-[#004851] mb-2 line-clamp-2">
-                The Future of AI in Strategic Decision Making
-              </h3>
+              <div className="flex flex-col mb-4">
+                <div className="flex items-center gap-4 mb-4">
+                  <a 
+                    href="https://youtu.be/_weG1tRRYYQ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center"
+                  >
+                    <Button 
+                      variant="ghost" 
+                      size="lg" 
+                      className="text-white bg-[#fc3c3d] hover:bg-[#e03536] w-20 h-20 rounded-full flex items-center justify-center transition-colors duration-300"
+                    >
+                      <Play size={36} className="ml-1" />
+                    </Button>
+                  </a>
 
-              <p className="text-[#4a5568] font-light mb-4 text-sm flex-grow line-clamp-3">
-                In this episode, we explore how artificial intelligence is transforming the landscape of strategic
-                decision-making in Fortune 500 companies.
-              </p>
+                  <h3 className="text-xl font-serif text-[#004851] text-left">
+                    The real power is in the conversation
+                  </h3>
+                </div>
+
+                <div className="w-full">
+                  <p className="text-[#4a5568] text-sm font-light text-left mb-4">
+                    In this engaging conversation, Daniel Anderson and Abram Jackson explore the evolving landscape of AI, particularly focusing on Microsoft's Copilot and its applications in enhancing productivity. Abram shares his extensive experience at Microsoft, detailing the journey from traditional AI to conversational models and the importance of adapting organizational mindsets towards AI adoption.
+                  </p>
+                </div>
+              </div>
 
               <div className="flex items-center justify-between text-xs text-[#4a5568] border-t border-gray-100 pt-3 mt-auto">
                 <div className="flex items-center">
                   <Calendar size={12} className="mr-1" />
-                  <span>April 2, 2023</span>
+                  <span>April 8, 2025</span>
                 </div>
                 <div className="flex items-center">
                   <Clock size={12} className="mr-1" />
-                  <span>45 minutes</span>
+                  <span>29:24</span>
                 </div>
               </div>
             </div>
 
-            {/* Episode Card 2 - Horizontal Layout */}
-            <div className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col border border-gray-100 rounded-sm">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-sm font-medium text-[#fc3c3d] uppercase tracking-wider">Episode 02</span>
-                <Button variant="ghost" size="sm" className="text-[#004851] hover:text-[#fc3c3d] p-0 h-auto">
-                  <Play size={18} className="mr-1" />
-                  <span className="text-sm">Play</span>
-                </Button>
+            {/* Episode 2 Card - Coming Soon */}
+            <div className="bg-white/50 p-6 shadow-sm transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
+              <div className="flex items-center justify-end mb-3">
+                <span className="text-sm font-medium text-white bg-[#004851] px-3 py-1 rounded-full uppercase tracking-wider">Episode 02</span>
               </div>
 
-              <h3 className="text-xl font-serif text-[#004851] mb-2 line-clamp-2">
-                Intelligence-Driven Growth Strategies
-              </h3>
+              <div className="flex flex-col items-center mb-4">
+                <Button 
+                  variant="ghost" 
+                  size="lg" 
+                  className="text-white/50 bg-[#fc3c3d]/20 w-20 h-20 rounded-full flex items-center justify-center mb-4 cursor-default"
+                  disabled
+                >
+                  <Play size={36} className="ml-1" />
+                </Button>
 
-              <p className="text-[#4a5568] font-light mb-4 text-sm flex-grow line-clamp-3">
-                Daniel and Abram discuss how data-driven intelligence is reshaping growth strategies for modern
-                businesses in competitive markets.
-              </p>
+                <h3 className="text-xl font-serif text-[#004851] mb-4 text-center">
+                  Dropping Soon
+                </h3>
+              </div>
 
-              <div className="flex items-center justify-between text-xs text-[#4a5568] border-t border-gray-100 pt-3 mt-auto">
-                <div className="flex items-center">
-                  <Calendar size={12} className="mr-1" />
-                  <span>March 15, 2023</span>
-                </div>
-                <div className="flex items-center">
-                  <Clock size={12} className="mr-1" />
-                  <span>52 minutes</span>
-                </div>
+              <div className="flex items-center justify-center text-sm text-[#4a5568]/70 border-t border-gray-100 pt-3 mt-auto">
+                <span>Coming Soon</span>
               </div>
             </div>
 
-            {/* Episode Card 3 - Horizontal Layout */}
-            <div className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col border border-gray-100 rounded-sm">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-sm font-medium text-[#fc3c3d] uppercase tracking-wider">Episode 01</span>
-                <Button variant="ghost" size="sm" className="text-[#004851] hover:text-[#fc3c3d] p-0 h-auto">
-                  <Play size={18} className="mr-1" />
-                  <span className="text-sm">Play</span>
-                </Button>
+            {/* Episode 3 Card - Coming Soon */}
+            <div className="bg-white/50 p-6 shadow-sm transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
+              <div className="flex items-center justify-end mb-3">
+                <span className="text-sm font-medium text-white bg-[#004851] px-3 py-1 rounded-full uppercase tracking-wider">Episode 03</span>
               </div>
 
-              <h3 className="text-xl font-serif text-[#004851] mb-2 line-clamp-2">
-                Introduction to Return on Intelligence
-              </h3>
+              <div className="flex flex-col items-center mb-4">
+                <Button 
+                  variant="ghost" 
+                  size="lg" 
+                  className="text-white/50 bg-[#fc3c3d]/20 w-20 h-20 rounded-full flex items-center justify-center mb-4 cursor-default"
+                  disabled
+                >
+                  <Play size={36} className="ml-1" />
+                </Button>
 
-              <p className="text-[#4a5568] font-light mb-4 text-sm flex-grow line-clamp-3">
-                In our inaugural episode, we introduce the concept of Return on Intelligence and how it's becoming the
-                new metric for business success.
-              </p>
+                <h3 className="text-xl font-serif text-[#004851] mb-4 text-center">
+                  Dropping Soon
+                </h3>
+              </div>
 
-              <div className="flex items-center justify-between text-xs text-[#4a5568] border-t border-gray-100 pt-3 mt-auto">
-                <div className="flex items-center">
-                  <Calendar size={12} className="mr-1" />
-                  <span>February 28, 2023</span>
-                </div>
-                <div className="flex items-center">
-                  <Clock size={12} className="mr-1" />
-                  <span>38 minutes</span>
-                </div>
+              <div className="flex items-center justify-center text-sm text-[#4a5568]/70 border-t border-gray-100 pt-3 mt-auto">
+                <span>Coming Soon</span>
               </div>
             </div>
           </div>
