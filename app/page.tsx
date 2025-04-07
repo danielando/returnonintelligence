@@ -197,8 +197,8 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Episode 1 Card */}
             <div className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
-              <div className="flex items-center justify-end mb-3">
-                <span className="text-sm font-medium text-white bg-[#004851] px-3 py-1 rounded-full uppercase tracking-wider">Episode 01</span>
+              <div className="flex items-center justify-start mb-3">
+                <span className="text-xs font-medium text-white bg-[#004851] px-2 py-0.5 rounded-full uppercase tracking-wider">Episode 01</span>
               </div>
 
               <div className="flex flex-col mb-4">
@@ -244,8 +244,8 @@ export default function LandingPage() {
 
             {/* Episode 2 Card - Coming Soon */}
             <div className="bg-white/50 p-6 shadow-sm transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
-              <div className="flex items-center justify-end mb-3">
-                <span className="text-sm font-medium text-white bg-[#004851] px-3 py-1 rounded-full uppercase tracking-wider">Episode 02</span>
+              <div className="flex items-center justify-start mb-3">
+                <span className="text-xs font-medium text-white bg-[#004851] px-2 py-0.5 rounded-full uppercase tracking-wider">Episode 02</span>
               </div>
 
               <div className="flex flex-col items-center mb-4">
@@ -270,8 +270,8 @@ export default function LandingPage() {
 
             {/* Episode 3 Card - Coming Soon */}
             <div className="bg-white/50 p-6 shadow-sm transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
-              <div className="flex items-center justify-end mb-3">
-                <span className="text-sm font-medium text-white bg-[#004851] px-3 py-1 rounded-full uppercase tracking-wider">Episode 03</span>
+              <div className="flex items-center justify-start mb-3">
+                <span className="text-xs font-medium text-white bg-[#004851] px-2 py-0.5 rounded-full uppercase tracking-wider">Episode 03</span>
               </div>
 
               <div className="flex flex-col items-center mb-4">
