@@ -204,7 +204,7 @@ export default function LandingPage() {
               <div className="flex flex-col mb-4">
                 <div className="flex items-center gap-4 mb-4">
                   <a 
-                    href="https://youtu.be/_weG1tRRYYQ"
+                    href="https://youtu.be/rZ1l5m1x1DM"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
