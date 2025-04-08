@@ -242,29 +242,50 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Episode 2 Card - Coming Soon */}
-            <div className="bg-white/50 p-6 shadow-sm transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
+            {/* Episode 2 Card */}
+            <div className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border border-gray-100 rounded-sm">
               <div className="flex items-center justify-start mb-3">
                 <span className="text-xs font-medium text-white bg-[#004851] px-2 py-0.5 rounded-full uppercase tracking-wider">Episode 02</span>
               </div>
 
-              <div className="flex flex-col items-center mb-4">
-                <Button 
-                  variant="ghost" 
-                  size="lg" 
-                  className="text-white/50 bg-[#fc3c3d]/20 w-20 h-20 rounded-full flex items-center justify-center mb-4 cursor-default"
-                  disabled
-                >
-                  <Play size={36} className="ml-1" />
-                </Button>
+              <div className="flex flex-col mb-4">
+                <div className="flex items-center gap-4 mb-4">
+                  <a 
+                    href="https://youtu.be/LvTfXA2nW_g"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center"
+                  >
+                    <Button 
+                      variant="ghost" 
+                      size="lg" 
+                      className="text-white bg-[#fc3c3d] hover:bg-[#e03536] w-20 h-20 rounded-full flex items-center justify-center transition-colors duration-300"
+                    >
+                      <Play size={36} className="ml-1" />
+                    </Button>
+                  </a>
 
-                <h3 className="text-xl font-serif text-[#004851] mb-4 text-center">
-                  Dropping Soon
-                </h3>
+                  <h3 className="text-xl font-serif text-[#004851] text-left">
+                    Copilot Agents That Work Together
+                  </h3>
+                </div>
+
+                <div className="w-full">
+                  <p className="text-[#4a5568] text-sm font-light text-left mb-4">
+                    In this episode, you'll join Daniel and Abram as they explore Microsoft's cutting-edge AI developments, with a special focus on the newly announced Researcher and Analyst agents for Copilot. Abram shares his experiences from the recent MVP Summit, explaining how these agents represent a fundamental shift in AI interaction patterns.
+                  </p>
+                </div>
               </div>
 
-              <div className="flex items-center justify-center text-sm text-[#4a5568]/70 border-t border-gray-100 pt-3 mt-auto">
-                <span>Coming Soon</span>
+              <div className="flex items-center justify-between text-xs text-[#4a5568] border-t border-gray-100 pt-3 mt-auto">
+                <div className="flex items-center">
+                  <Calendar size={12} className="mr-1" />
+                  <span>April 15, 2025</span>
+                </div>
+                <div className="flex items-center">
+                  <Clock size={12} className="mr-1" />
+                  <span>30:42</span>
+                </div>
               </div>
             </div>
 
