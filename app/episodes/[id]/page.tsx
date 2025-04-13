@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Play, Calendar, Clock, LinkedinIcon, TwitterIcon, YoutubeIcon, Globe } from "lucide-react"
