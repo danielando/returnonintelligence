@@ -28,8 +28,8 @@ export function ConvertKitForm() {
         throw new Error('Failed to subscribe')
       }
 
-      // Redirect to thank you page
-      window.location.href = '/thank-you'
+      // Redirect to thank you page with full domain
+      window.location.href = 'https://returnonintelligence.ai/thank-you'
     } catch (err) {
       setError('Failed to subscribe. Please try again.')
     } finally {
