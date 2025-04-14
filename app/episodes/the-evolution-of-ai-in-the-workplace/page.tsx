@@ -6,8 +6,8 @@ export default function Episode1Page() {
       title="The Evolution of AI in the Workplace"
       date="April 8, 2025"
       duration="29:24"
-      youtubeUrl="https://youtu.be/LvTfXA2nW_g"
-      introduction="In this episode of Return on Intelligence, Abram and I explore how AI is transforming workplace productivity and changing the fundamental nature of work. We discuss the shift from traditional tools to AI-powered agents that can work together to accomplish complex tasks."
+      youtubeUrl="https://youtu.be/rZ1l5m1x1DM"
+      introduction="Daniel Anderson and Abram Jackson explore how AI is transforming workplace productivity and changing the fundamental nature of work. They discuss the shift from traditional tools to AI-powered agents."
       showNotes={[
         `<div class="mb-8">
           <iframe 
