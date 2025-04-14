@@ -1,4 +1,5 @@
 import { EpisodeTemplate } from "@/components/episode-template"
+import { Play } from "lucide-react"
 
 export default function Episode1Page() {
   return (
@@ -10,15 +11,13 @@ export default function Episode1Page() {
       introduction="Daniel Anderson and Abram Jackson explore how AI is transforming workplace productivity and changing the fundamental nature of work. They discuss the shift from traditional tools to AI-powered agents."
       showNotes={[
         `<div class="mb-8">
-          <iframe 
-            width="100%" 
-            height="180" 
-            frameborder="no" 
-            scrolling="no" 
-            seamless 
-            src="https://share.transistor.fm/e/484e3ca8"
-            class="rounded-lg shadow-sm"
-          ></iframe>
+          <div 
+            data-transistor-episode-id="484e3ca8"
+            data-transistor-theme="light"
+            data-transistor-player-height="180"
+            data-transistor-player-width="100%"
+            class="transistor-embed"
+          ></div>
         </div>`,
         "We explored Microsoft's new Researcher and Analyst agents for Copilot, which represent a fundamental shift in how we interact with AI. Instead of simple chat interfaces, these agents can be set up to work autonomously on complex tasks, potentially saving hours of human effort.",
         "We discussed how Researcher connects with the entire Microsoft 365 ecosystem, including Teams, emails, SharePoint, and enterprise applications. We also examined how Analyst brings sophisticated data processing capabilities to everyday users without requiring specialized knowledge.",

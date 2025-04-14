@@ -1,4 +1,5 @@
 import { EpisodeTemplate } from "@/components/episode-template"
+import { Play } from "lucide-react"
 
 export default function Episode2Page() {
   return (
@@ -9,15 +10,15 @@ export default function Episode2Page() {
       youtubeUrl="https://youtu.be/LvTfXA2nW_g"
       introduction="Daniel Anderson and Abram Jackson explore Microsoft's latest AI developments, focusing on the new Researcher and Analyst agents. They discuss how these agents work together to provide more comprehensive and accurate information."
       showNotes={[
-        `<div class="w-full max-w-4xl mx-auto my-8">
-          <iframe
-            src="https://share.transistor.fm/e/return-on-intelligence/2"
-            width="100%"
-            height="180"
-            frameborder="0"
-            scrolling="no"
-            seamless="true"
-            style="width: 100%; height: 180px;"
+        `<div class="mb-8">
+          <iframe 
+            width="100%" 
+            height="180" 
+            frameborder="no" 
+            scrolling="no" 
+            seamless="" 
+            src="https://share.transistor.fm/e/33058da7"
+            class="rounded-lg shadow-sm"
           ></iframe>
         </div>`,
         "In this episode, Daniel Anderson and Abram Jackson dive deep into Microsoft's latest AI developments, focusing on the newly announced Researcher and Analyst agents for Copilot. They explore how these agents work together to provide more comprehensive and accurate information, and discuss the implications for business productivity and decision-making."

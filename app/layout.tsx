@@ -34,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://share.transistor.fm/sdk/v1/sdk.js" async></script>
       </head>
       <body className={inter.className}>
         <Header />
