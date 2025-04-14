@@ -9,7 +9,17 @@ export default function Episode1Page() {
       youtubeUrl="https://youtu.be/LvTfXA2nW_g"
       introduction="In this episode of Return on Intelligence, Abram and I explore how AI is transforming workplace productivity and changing the fundamental nature of work. We discuss the shift from traditional tools to AI-powered agents that can work together to accomplish complex tasks."
       showNotes={[
-        "We began by discussing Abram's experience at the recent MVP Summit in Seattle, where he gained insights into Microsoft's long-term vision for AI in the workplace. The conversation focused on how these developments are changing the way we think about productivity and work processes.",
+        `<div class="mb-8">
+          <iframe 
+            width="100%" 
+            height="180" 
+            frameborder="no" 
+            scrolling="no" 
+            seamless 
+            src="https://share.transistor.fm/e/484e3ca8"
+            class="rounded-lg shadow-sm"
+          ></iframe>
+        </div>`,
         "We explored Microsoft's new Researcher and Analyst agents for Copilot, which represent a fundamental shift in how we interact with AI. Instead of simple chat interfaces, these agents can be set up to work autonomously on complex tasks, potentially saving hours of human effort.",
         "We discussed how Researcher connects with the entire Microsoft 365 ecosystem, including Teams, emails, SharePoint, and enterprise applications. We also examined how Analyst brings sophisticated data processing capabilities to everyday users without requiring specialized knowledge.",
         "The episode concluded with a look at the future of image generation in workplace tools and how custom 'style agents' can maintain visual consistency across all content types."

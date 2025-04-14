@@ -90,9 +90,7 @@ export function EpisodeTemplate({
             </p>
             
             {showNotes.map((note, index) => (
-              <p key={index} className="text-lg text-[#4a5568] mb-8">
-                {note}
-              </p>
+              <div key={index} className="text-lg text-[#4a5568] mb-8" dangerouslySetInnerHTML={{ __html: note }} />
             ))}
 
             <h2 className="text-2xl font-serif text-[#004851] mt-12 mb-6">Key Insights</h2>
