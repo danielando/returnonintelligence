@@ -27,7 +27,7 @@ export default function LandingPage() {
               Return on Intelligence
             </h1>
             <p className="text-base md:text-lg text-white mx-auto leading-snug max-w-2xl font-light">
-              The go-to podcast for forward-thinking business leaders, IT professionals, and decision-makers who
+              The go-to show for forward-thinking business leaders, IT professionals, and decision-makers who
               understand that AI isn't just a trend—it's the ultimate investment in the future of work.
             </p>
             <div className="w-full max-w-2xl mx-auto">
@@ -72,10 +72,10 @@ export default function LandingPage() {
                 </div>
                 <Link 
                   href="/episodes/the-evolution-of-ai-in-the-workplace" 
-                  className="inline-flex items-center justify-center bg-[#fc3c3d] text-white px-4 py-1.5 rounded-full hover:bg-[#e03536] transition-colors text-sm"
+                  className="inline-flex items-center justify-center bg-[#004851] text-white px-4 py-1.5 rounded-full hover:bg-[#003a42] transition-colors text-sm"
                 >
                   <Play size={16} className="mr-2" />
-                  Listen Now
+                  Listen or Watch Now
                 </Link>
               </div>
             </div>
@@ -103,10 +103,10 @@ export default function LandingPage() {
                 </div>
                 <Link 
                   href="/episodes/copilot-agents-that-work-together" 
-                  className="inline-flex items-center justify-center bg-[#fc3c3d] text-white px-4 py-1.5 rounded-full hover:bg-[#e03536] transition-colors text-sm"
+                  className="inline-flex items-center justify-center bg-[#004851] text-white px-4 py-1.5 rounded-full hover:bg-[#003a42] transition-colors text-sm"
                 >
                   <Play size={16} className="mr-2" />
-                  Listen Now
+                  Listen or Watch Now
                 </Link>
               </div>
             </div>
@@ -153,47 +153,16 @@ export default function LandingPage() {
       </section>
 
       {/* Podcast Subscription Options */}
-      <section className="w-full py-6 bg-[#f5f5f0] border-t border-b border-gray-100">
-        <div className="container mx-auto px-4 md:px-6">
+      <section id="subscribe" className="w-full py-16 bg-[#004851] border-t border-b border-gray-100 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
+        <div className="container mx-auto px-4 md:px-6 relative">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-lg font-serif text-[#004851] text-center mb-6">Available on YouTube, Apple Podcasts, Spotify, or wherever you get your podcasts</h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="https://www.youtube.com/playlist?list=PLCkrTqFsjJnzoZ1a7UCsgxOZxNb3Z4n9v" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
-                <YoutubeIcon className="w-5 h-5 text-[#fc3c3d]" />
-                <span className="text-sm text-[#4a5568]">YouTube</span>
-              </a>
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
-                <svg className="w-5 h-5 text-[#004851]" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm0 19c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
-                  <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
-                  <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
-                </svg>
-                <span className="text-sm text-[#4a5568]">Apple Podcasts</span>
-              </a>
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
-                <svg className="w-5 h-5 text-[#004851]" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm0 19c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
-                  <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
-                  <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
-                </svg>
-                <span className="text-sm text-[#4a5568]">Spotify</span>
-              </a>
-            </div>
+            <h3 className="text-3xl md:text-4xl font-serif text-white text-center mb-4">
+              Available on <a href="https://www.youtube.com/playlist?list=PLCkrTqFsjJnzoZ1a7UCsgxOZxNb3Z4n9v" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-[#fc3c3d] text-white px-3 py-0.5 rounded-full hover:bg-[#e03536] transition-colors text-3xl md:text-4xl font-serif align-middle">YouTube</a>, and wherever you get your podcasts
+            </h3>
+            <p className="text-lg text-white/90 text-center max-w-2xl mx-auto">
+              Subscribe to stay updated with our latest episodes and insights on AI in the workplace.
+            </p>
           </div>
         </div>
       </section>

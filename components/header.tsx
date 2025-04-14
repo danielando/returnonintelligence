@@ -1,7 +1,20 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 export function Header() {
+  const router = useRouter()
+
+  const handleEpisodesClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    const episodesSection = document.getElementById('episodes')
+    if (episodesSection) {
+      episodesSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <header className="w-full bg-[#004851]">
       <div className="container mx-auto px-4 md:px-6">
@@ -29,11 +42,13 @@ export function Header() {
               Home
             </Link>
             <div className="flex items-center gap-8">
-              <Link href="/#episodes" className="text-white/80 hover:text-white transition-colors">
+              <Link 
+                href="/#episodes" 
+                className="text-white/80 hover:text-white transition-all duration-300 relative group"
+                onClick={handleEpisodesClick}
+              >
                 Episodes
-              </Link>
-              <Link href="/contact" className="text-white/80 hover:text-white transition-colors">
-                Contact
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </div>
           </nav>
