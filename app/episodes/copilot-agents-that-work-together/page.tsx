@@ -6,58 +6,58 @@ export default function Episode2Page() {
       title="Copilot Agents That Work Together"
       date="April 15, 2025"
       duration="30:42"
-      youtubeUrl="https://www.youtube.com/watch?v=example2"
-      introduction="In this episode, Daniel Anderson and Abram Jackson dive into Microsoft's latest AI developments, focusing on the new Researcher and Analyst agents. They explore how these agents work together to provide more comprehensive and accurate information, and discuss the implications for business productivity and decision-making."
+      youtubeUrl="https://youtu.be/LvTfXA2nW_g"
+      introduction="Daniel Anderson and Abram Jackson explore Microsoft's latest AI developments, focusing on the new Researcher and Analyst agents. They discuss how these agents work together to provide more comprehensive and accurate information."
       showNotes={[
-        `<div class="mb-8">
-          <iframe 
-            width="100%" 
-            height="180" 
-            frameborder="no" 
-            scrolling="no" 
-            seamless 
-            src="https://share.transistor.fm/e/33058da7"
-            class="rounded-lg shadow-sm"
+        `<div class="w-full max-w-4xl mx-auto my-8">
+          <iframe
+            src="https://share.transistor.fm/e/return-on-intelligence/2"
+            width="100%"
+            height="180"
+            frameborder="0"
+            scrolling="no"
+            seamless="true"
+            style="width: 100%; height: 180px;"
           ></iframe>
-        </div>`
+        </div>`,
+        "In this episode, Daniel Anderson and Abram Jackson dive deep into Microsoft's latest AI developments, focusing on the newly announced Researcher and Analyst agents for Copilot. They explore how these agents work together to provide more comprehensive and accurate information, and discuss the implications for business productivity and decision-making."
       ]}
       keyInsights={[
-        "The new Researcher agent can gather and synthesize information from multiple sources",
-        "The Analyst agent can process and interpret complex data sets",
-        "Together, these agents provide more accurate and comprehensive insights",
-        "This represents a shift from single-agent to multi-agent AI systems",
-        "The collaboration between agents mirrors effective human teamwork"
+        "Microsoft's new Researcher and Analyst agents represent a significant advancement in AI capabilities",
+        "The agents work together to provide more comprehensive and accurate information",
+        "This development has major implications for business productivity and decision-making",
+        "The integration of these agents into Copilot will transform how we work with AI"
       ]}
       timestamps={[
         "00:00 - Introduction",
-        "02:15 - Overview of new Microsoft AI agents",
-        "08:30 - How the Researcher agent works",
-        "15:45 - Capabilities of the Analyst agent",
-        "22:10 - Real-world use cases and examples",
-        "28:00 - Future implications and closing thoughts"
+        "05:15 - Overview of Microsoft's AI developments",
+        "12:30 - Deep dive into Researcher agent capabilities",
+        "18:45 - Exploring Analyst agent features",
+        "25:10 - How the agents work together",
+        "30:00 - Future implications and closing thoughts"
       ]}
       quotes={[
         {
-          text: "The real power comes from how these agents work together, not just what they can do individually.",
+          text: "The way these agents collaborate is truly remarkable. It's not just about individual capabilities, but how they complement each other to provide a more complete picture.",
           author: "Daniel Anderson"
         },
         {
-          text: "This is a game-changer for how we think about AI assistance in the workplace.",
+          text: "This represents a fundamental shift in how we think about AI assistance. It's no longer about single-purpose tools, but about creating a network of intelligent agents that work together.",
           author: "Abram Jackson"
         }
       ]}
       hosts={[
         {
           name: "Daniel Anderson",
-          image: "/images/daniel-anderson.jpg",
-          linkedin: "https://linkedin.com/in/danielanderson",
-          twitter: "https://twitter.com/danielanderson"
+          image: "/images/daniel-anderson.png",
+          linkedin: "https://www.linkedin.com/in/danielando/",
+          twitter: "https://x.com/sharepointfocus"
         },
         {
           name: "Abram Jackson",
-          image: "/images/abram-jackson.jpg",
-          linkedin: "https://linkedin.com/in/abramjackson",
-          twitter: "https://twitter.com/abramjackson"
+          image: "/images/abram-jackson.png",
+          linkedin: "https://www.linkedin.com/in/abramj/",
+          twitter: "https://x.com/abrakjamson"
         }
       ]}
     />
