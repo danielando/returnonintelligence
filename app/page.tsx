@@ -8,8 +8,9 @@ export default function LandingPage() {
   return (
     <>
       {/* Header with Opt-in Form */}
-      <header id="hero" className="w-full py-8 md:py-10 bg-[#004851] text-white">
-        <div className="container mx-auto px-4 md:px-6">
+      <header id="hero" className="w-full py-8 md:py-10 bg-[#004851] text-white relative overflow-hidden bg-[url('/images/rocketbg.png')] bg-cover bg-top">
+        <div className="absolute inset-0 bg-[#004851]/70"></div>
+        <div className="container mx-auto px-4 md:px-6 relative">
           <div className="max-w-4xl mx-auto text-center space-y-4">
             {/* Podcast Logo - Smaller */}
             <div className="flex justify-center mb-1">
