@@ -50,6 +50,37 @@ export default function LandingPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
+            {/* Episode 3 */}
+            <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden">
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2">
+                    <Radio size={16} className="text-[#fc3c3d]" />
+                    <span className="text-sm text-[#4a5568]">April 22, 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock size={16} className="text-[#4a5568]" />
+                    <span className="text-sm text-[#4a5568]">32:53</span>
+                  </div>
+                </div>
+                <h3 className="text-xl font-serif text-[#004851] mb-2">
+                  <Link href="/episodes/the-doer-mindset-why-ai-rewards-action-takers" className="hover:text-[#fc3c3d] transition-colors">
+                    The Doer Mindset - Why AI Rewards Action-Takers
+                  </Link>
+                </h3>
+                <p className="text-[#4a5568] mb-4">
+                  In this episode, you'll join Daniel and Abram as they explore the shifting landscape of AI adoption in organizations, examining Shopify CEO Toby Lütke's recently leaked internal letter that establishes AI usage as a baseline requirement for all employees. Abram shares insights from his recent article on the "doer mindset" - explaining why high-agency individuals who make decisions quickly will benefit disproportionately from AI capabilities.
+                </p>
+                <Link 
+                  href="/episodes/the-doer-mindset-why-ai-rewards-action-takers" 
+                  className="inline-flex items-center justify-center bg-[#004851] text-white px-4 py-1.5 rounded-full hover:bg-[#003a42] transition-colors text-sm"
+                >
+                  <Play size={16} className="mr-2" />
+                  Listen or Watch Now
+                </Link>
+              </div>
+            </div>
+
             {/* Episode 2 */}
             <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden">
               <div className="p-6">
